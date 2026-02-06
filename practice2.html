@@ -1,6 +1,7 @@
 <style>
-
-  * { box-sizing: border-box; }
+  * {
+    box-sizing: border-box;
+  }
 
   body {
     display: flex;
@@ -16,22 +17,26 @@
     height: 500px;
     border: 1px dashed;
   }
-  
+
   .shadow {
     filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
   }
-  
-  .coffeemaker1 {
+
+  .coffeemaker {
+    position: relative;
+  }
+
+  .coffeemaker .graybottom {
     position: absolute;
     left: 0px;
     width: 500px;
     height: 500px;
     clip-path: polygon(40% 60%, 60% 60%, 66% 90%, 34% 90%);
-    background: radial-gradient(circle,rgba(255, 255, 255, 1) 0%, rgba(164, 172, 176, 1) 23%, rgba(135, 142, 145, 1) 46%, rgba(98, 111, 115, 1) 74%, rgba(74, 74, 74, 1) 100%);
-   
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(164, 172, 176, 1) 23%, rgba(135, 142, 145, 1) 46%, rgba(98, 111, 115, 1) 74%, rgba(74, 74, 74, 1) 100%);
+
   }
-  
-  .coffeemaker2 {
+
+  .coffeemaker .redbottom {
     position: absolute;
     width: 143px;
     height: 40px;
@@ -39,10 +44,10 @@
     left: 50%;
     transform: translateX(-50%);
     top: calc(63% - 50px);
-    
+
   }
-  
-  .coffeemaker3 {
+
+  .coffeemaker .red-middle-1 {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -51,10 +56,10 @@
     transform: translateX(-40%);
     top: calc(63% - 28px - 310px);
     clip-path: polygon(20% 28%, 25% 29%, 30% 62%, 24% 60%);
-    
+
   }
-  
-  .coffeemaker4 {
+
+  .coffeemaker .red-middle-2 {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -63,10 +68,10 @@
     transform: translateX(-40%);
     top: calc(63% - 28px - 310px);
     clip-path: polygon(32% 29%, 25% 29%, 30% 62%, 36% 62%);
-    
+
   }
-  
-  .coffeemaker5 {
+
+  .coffeemaker .red-middle-3 {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -75,11 +80,11 @@
     transform: translateX(-40%);
     top: calc(63% - 28px - 310px);
     clip-path: polygon(32% 29%, 42% 29%, 44% 62%, 36% 62%);
-   
+
 
   }
 
-.coffeemaker6 {
+  .coffeemaker .red-middle-4 {
     position: absolute;
     width: 500px;
     height: 500px;
@@ -88,24 +93,24 @@
     transform: translateX(-40%);
     top: calc(63% - 28px - 310px);
     clip-path: polygon(54% 27%, 42% 29%, 44% 62%, 55% 60%);
-    
-  }
 
+  }
 </style>
 
 
 <div class="frame">
-  <div class="shadow">
-    <div class="coffeemaker1"></div>
-  </div>
-  <div class="shadow">
-    <div class="coffeemaker2"></div>
-  </div>
-  <div class="shadow">
-    <div class="coffeemaker3"></div>
-    <div class="coffeemaker4"></div>
-    <div class="coffeemaker5"></div>
-    <div class="coffeemaker6"></div>
+  <div class="coffeemaker">
+    <div class="shadow">
+      <div class="graybottom"></div>
+    </div>
+    <div class="shadow">
+      <div class="redbottom"></div>
+    </div>
+    <div class="shadow">
+      <div class="red-middle-1"></div>
+      <div class="red-middle-2"></div>
+      <div class="red-middle-3"></div>
+      <div class="red-middle-4"></div>
+    </div>
   </div>
 </div>
-
