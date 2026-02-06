@@ -1,6 +1,7 @@
 <style>
-
-  * { box-sizing: border-box; }
+  * {
+    box-sizing: border-box;
+  }
 
   body {
     display: flex;
@@ -17,29 +18,237 @@
     border: 1px dashed;
   }
   
-  .coffeemaker1 {
+  .bean1 {
+    position: relative;
+    left: 250px;
+    top: 40px;
+  }
+  
+  .bean2 {
+    position: relative;
+    left: 10px;
+    top: -150px;
+  }
+
+  .bean {
+    position: relative;
+    margin: 50px;
+  }
+
+  .bean .top {
+    width: 125px;
+    height: 30px;
+    background-color: #feefb9;
+    border-radius: 50% / 50%;
     position: absolute;
-    left: 0px;
-    background: gray;
-    width: 500px;
-    height: 500px;
-    clip-path: polygon(37% 63%, 57% 63%, 63% 91%, 29% 91%);
+    left: -2px;
+    top: -15px;
+  }
+
+  .bean .topcircle {
+    width: 108px;
+    height: 18px;
+    background-color: #feefb9;
+    border-radius: 50% / 50%;
+    position: absolute;
+    top: -8px;
+    left: 6px;
+    box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.5)
+  }
+
+  .bean .topcylinder {
+    width: 125px;
+    height: 15px;
+    background-color: #b29402;
+    position: absolute;
+    left: -2px;
+  }
+
+  .bean .topbottom {
+    width: 125px;
+    height: 30px;
+    background-color: #b29402;
+    border-radius: 50% / 50%;
+    position: absolute;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
+    left: -2px;
+  }
+
+  .bean .bottomred {
+    width: 120px;
+    height: 30px;
+    background-color: #a90d1f;
+    border-radius: 50% / 50%;
+    position: absolute;
+    top: 155px;
+  }
+
+  .bean .bottom {
+    width: 120px;
+    height: 30px;
+    background-color: #c8ab91;
+    border-radius: 50% / 50%;
+    position: absolute;
+    top: 160px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75)
+  }
+
+  .bean .middle {
+    width: 120px;
+    height: 170px;
+    background-color: #e1c000;
+    position: absolute;
+  }
+
+  .bean .middlecylinder {
+    width: 120px;
+    height: 60px;
+    background-color: #a90d1f;
+    position: absolute;
+    top: 110px;
+  }
+
+  .bean .middlecircle {
+    width: 120px;
+    height: 30px;
+    background-color: #e1c000;
+    border-radius: 50% / 50%;
+    position: absolute;
+    top: 95px;
+  }
+
+  .bean .header-text {
+    color: #13172a;
+    font-family: sans-serif;
+    transform: rotate(-5deg);
+    transform-origin: left bottom;
+  }
+
+  .bean .CAF {
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    top: 50px;
+    left: 64px;
+  }
+
+  .bean .BUS {
+    position: relative;
+    font-weight: bold;
+    font-size: 25px;
+    top: 25px;
+    left: 62px;
+  }
+
+  .bean .Cafe-express {
+    position: relative;
+    font-size: 8px;
+    top: 3px;
+    left: 72px;
   }
   
-  .coffeemaker1::after {
-    content: "";
-    display: ellipse;
-    background: red;
-    width: 500px;
-    height: 500px;
+  .bean .O {
+    position: relative;
+    font-size: 25px;
+    top: -35px;
+    left: 4px;
+  }
+
+  .bean .sub-text {
+    color: #ffcec0;
+    font-family: sans-serif;
+    transform: rotate(-5deg);
+    transform-origin: left bottom;
+  }
+
+  .bean .SIEMPRE {
+    position: relative;
+    font-size: 8px;
+    top: 12px;
+    left: 55px;
+  }
+
+  .bean .COMO {
+    position: relative;
+    font-size: 8px;
+    top: 3px;
+    left: 82px;
+  }
+
+  .bean .ENVASADO {
+    position: relative;
+    color: #fe9869;
+    font-size: 6px;
+    top: -1px;
+    left: 80px;
+  }
+
+  .bean .PESO {
+    position: relative;
+    font-size: 8px;
+    top: 1px;
+    left: 67px;
   }
   
-
-
-
+  .bean .ALWAYS {
+    position: relative;
+    font-size: 8px;
+    top: 10px;
+    left: 62px;
+  }
+  
 </style>
 
 
 <div class="frame">
-  <div class="coffeemaker1"></div>
+  <div class="bean1">
+    <div class="bean">
+      <div class="bottom"></div>
+      <div class="middle"></div>
+      <div class="topbottom"></div>
+      <div class="topcylinder"></div>
+      <div class="top"></div>
+      <div class="topcircle"></div>
+      <div class="middlecylinder"></div>
+      <div class="middlecircle"></div>
+      <div class="bottomred"></div>
+      <div class="header-text">
+        <p class="CAF">CAFI</p>
+        <p class="BUS">BUSI</p>
+        <p class="Cafe-express">Café Espress</p>
+      </div>
+      <div class="sub-text">
+        <p class="SIEMPRE">SIEMPRE PURO Y</p>
+        <p class="COMO">COMO NIN</p>
+        <p class="ENVASADO">ENVASADO AL</p>
+        <p class="PESO">PESO NETO 1</p>
+
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="bean2">
+    <div class="bean">
+      <div class="bottom"></div>
+      <div class="middle"></div>
+      <div class="topbottom"></div>
+      <div class="topcylinder"></div>
+      <div class="top"></div>
+      <div class="topcircle"></div>
+      <div class="middlecylinder"></div>
+      <div class="middlecircle"></div>
+      <div class="bottomred"></div>
+      <div class="header-text">
+        <p class="CAF">CAFI</p>
+        <p class="BUS">BUSI</p>
+        <p class="O">O.</p>
+      </div>
+      <div class="sub-text">
+        <p class="ALWAYS">ALWAYS</p>
+
+      </div>
+    </div>
+
+  </div>
 </div>
