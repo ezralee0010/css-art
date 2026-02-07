@@ -16,7 +16,8 @@
     width: 500px;
     height: 500px;
     border: 1px dashed;
-    background: #cccde1;
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(105, 100, 89, 1) 100%);
+    overflow: hidden;
   }
 
   .shadow-bottom-left {
@@ -29,6 +30,24 @@
 
   .shadow-top-left {
     filter: drop-shadow(-6px -3px 3px rgba(50, 50, 0, 0.5));
+  }
+
+  .table {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: radial-gradient(circle, rgba(32, 36, 56, 1) 0%, rgba(162, 162, 184, 1) 63%, rgba(209, 209, 211, 1) 100%);
+    clip-path: polygon(2% 52%, 31% 23%, 93% 39%, 62% 78%);
+    transform: translate(-60px, 0px);
+  }
+
+  .table-wood {
+    position: absolute;
+    width: 700px;
+    height: 700px;
+    background: linear-gradient(90deg, rgba(111, 74, 35, 1) 0%, rgba(145, 106, 67, 1) 51%, rgba(48, 35, 21, 1) 100%);
+    clip-path: polygon(2% 52%, 31% 23%, 93% 39%, 62% 78%);
+    transform: translate(-55px, 20px);
   }
 
   /* Coffee Bean Container Starts*/
@@ -52,7 +71,7 @@
     position: absolute;
     width: 125px;
     height: 30px;
-    background-color: #feefb9;
+    background: #feefb9;
     border-radius: 50% / 50%;
     transform: translate(-2px, -15px);
   }
@@ -61,7 +80,7 @@
     position: absolute;
     width: 108px;
     height: 18px;
-    background-color: #feefb9;
+    background: #feefb9;
     border-radius: 50% / 50%;
     transform: translate(6px, -8px);
     box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.5)
@@ -71,7 +90,7 @@
     position: absolute;
     width: 125px;
     height: 15px;
-    background-color: #b29402;
+    background: #b29402;
     transform: translate(-2px, 0px);
   }
 
@@ -79,7 +98,7 @@
     position: absolute;
     width: 125px;
     height: 30px;
-    background-color: #b29402;
+    background: #b29402;
     border-radius: 50% / 50%;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
     transform: translate(-2px, 0px);
@@ -89,7 +108,7 @@
     position: absolute;
     width: 120px;
     height: 30px;
-    background-color: #a90d1f;
+    background: linear-gradient(90deg, rgba(169, 13, 31, 1) 0%, rgba(255, 105, 122, 1) 50%, rgba(255, 120, 136, 1) 75%, rgba(247, 69, 90, 1) 100%);
     border-radius: 50% / 50%;
     transform: translate(0px, 155px);
   }
@@ -98,7 +117,7 @@
     position: absolute;
     width: 120px;
     height: 30px;
-    background-color: #c8ab91;
+    background: #c8ab91;
     border-radius: 50% / 50%;
     transform: translate(0px, 160px);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75)
@@ -108,21 +127,21 @@
     position: absolute;
     width: 120px;
     height: 170px;
-    background-color: #e1c000;
+    background: linear-gradient(90deg, rgba(225, 192, 0, 1) 0%, rgba(255, 230, 130, 1) 50%, rgba(255, 217, 0, 1) 100%);
   }
 
   .bean .middlecylinder {
     position: absolute;
     width: 120px;
     height: 60px;
-    background-color: #a90d1f;
+    background: linear-gradient(90deg, rgba(169, 13, 31, 1) 0%, rgba(255, 105, 122, 1) 50%, rgba(255, 120, 136, 1) 75%, rgba(247, 69, 90, 1) 100%);
     transform: translate(0px, 110px);
   }
 
   .bean .middlecircle {
     width: 120px;
     height: 30px;
-    background-color: #e1c000;
+    background: linear-gradient(90deg, rgba(225, 192, 0, 1) 0%, rgba(255, 230, 130, 1) 50%, rgba(255, 217, 0, 1) 100%);
     border-radius: 50% / 50%;
     position: absolute;
     transform: translate(0px, 95px);
@@ -217,7 +236,7 @@
     width: 500px;
     height: 470px;
     clip-path: polygon(37.5% 60%, 62.5% 60%, 66% 85%, 34% 85%);
-    background: linear-gradient(90deg, rgba(133, 133, 133, 1) 0%, rgba(116, 116, 130, 1) 9%, rgba(158, 158, 176, 1) 17%, rgba(199, 201, 209, 1) 54%, rgba(167, 178, 184, 1) 75%, rgba(161, 169, 173, 1) 77%, rgba(105, 109, 110, 1) 88%, rgba(133, 141, 143, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 1) 0%, rgba(163, 163, 163, 1) 57%, rgba(209, 209, 209, 1) 100%);
   }
 
   .coffeemaker .gray-circle-top {
@@ -233,7 +252,7 @@
     position: absolute;
     width: 160px;
     height: 20px;
-    background: #C7C9D1;
+    background: #B3B3B3;
     border-radius: 50% / 50%;
     transform: translate(170px, 390px);
   }
@@ -242,7 +261,7 @@
     position: absolute;
     width: 143px;
     height: 35px;
-    background: red;
+    background: radial-gradient(circle, rgba(255, 140, 171, 1) 0%, rgba(255, 0, 0, 1) 47%, rgba(255, 135, 135, 1) 100%);
     transform: translate(178px, 260px);
   }
 
@@ -250,7 +269,7 @@
     position: absolute;
     width: 143px;
     height: 20px;
-    background: red;
+    background: radial-gradient(circle, rgba(255, 140, 171, 1) 0%, rgba(255, 0, 0, 1) 47%, rgba(255, 135, 135, 1) 100%);
     border-radius: 50% / 50%;
     transform: translate(178px, 285px);
   }
@@ -259,7 +278,8 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    background: red;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(255, 66, 66, 1) 51%, rgba(255, 255, 255, 1) 100%);
+
     clip-path: polygon(20% 28%, 25% 29%, 30% 62%, 24% 60%);
     transform: translate(50px, -40px);
   }
@@ -268,7 +288,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    background: #cc0000;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 51%, rgba(255, 222, 222, 1) 100%);
     clip-path: polygon(32% 29%, 25% 29%, 30% 62%, 36% 62%);
     transform: translate(50px, -40px);
   }
@@ -277,7 +297,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    background: #cc0000;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(255, 0, 0, 1) 51%, rgba(255, 222, 222, 1) 100%);
     clip-path: polygon(32% 29%, 42% 29%, 44% 62%, 36% 62%);
     transform: translate(50px, -40px);
   }
@@ -286,7 +306,7 @@
     position: absolute;
     width: 500px;
     height: 500px;
-    background: red;
+    background: linear-gradient(0deg, rgba(255, 0, 0, 1) 0%, rgba(255, 66, 66, 1) 51%, rgba(255, 255, 255, 1) 100%);
     clip-path: polygon(54% 27%, 42% 29%, 44% 62%, 55% 60%);
     transform: translate(50px, -40px);
   }
@@ -627,10 +647,12 @@
   }
 
   /* Cups End */
+  
 </style>
-
-
 <div class="frame">
+  <div class="table-wood"></div>
+  <div class="table"></div>
+
   <div class="bean1">
     <div class="bean">
       <div class="bottom"></div>
@@ -701,6 +723,7 @@
       <div class="flag-white-cover"></div>
     </div>
   </div>
+
   <div class="cup2">
     <div class="cup">
       <div class="shadow-bottom-right">
@@ -726,6 +749,7 @@
       <div class="cup-top-circle"></div>
     </div>
   </div>
+
   <div class="cup3">
     <div class="cup">
       <div class="cup-bottom-bottom"></div>
@@ -756,8 +780,6 @@
       </div>
     </div>
   </div>
-
-
 
   <div class="coffeemaker">
     <div class="shadow-bottom-right">
@@ -798,7 +820,5 @@
     <div class="black-circle"></div>
     <div class="black-cylinder"></div>
     <div class="black-circle-top"></div>
-
   </div>
-
 </div>
