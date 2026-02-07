@@ -16,97 +16,107 @@
     width: 500px;
     height: 500px;
     border: 1px dashed;
+    background: #cccde1;
+  }
+
+  .shadow-bottom-left {
+    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+  }
+
+  .shadow-bottom-right {
+    filter: drop-shadow(3px 6px 3px rgba(50, 50, 0, 0.5));
+  }
+
+  .shadow-top-left {
+    filter: drop-shadow(-6px -3px 3px rgba(50, 50, 0, 0.5));
   }
 
   /* Coffee Bean Container Starts*/
   .bean1 {
     position: absolute;
-    left: 250px;
-    top: 100px;
+    transform: translate(220px, 88px);
   }
 
   .bean2 {
     position: absolute;
-    left: 40px;
-    top: 150px;
+    transform: translate(25px, 110px);
   }
 
   .bean {
     position: absolute;
     margin: 50px;
+    transform: scale(1.2);
   }
 
   .bean .top {
+    position: absolute;
     width: 125px;
     height: 30px;
     background-color: #feefb9;
     border-radius: 50% / 50%;
-    position: absolute;
-    left: -2px;
-    top: -15px;
+    transform: translate(-2px, -15px);
   }
 
   .bean .topcircle {
+    position: absolute;
     width: 108px;
     height: 18px;
     background-color: #feefb9;
     border-radius: 50% / 50%;
-    position: absolute;
-    top: -8px;
-    left: 6px;
+    transform: translate(6px, -8px);
     box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.5)
   }
 
   .bean .topcylinder {
+    position: absolute;
     width: 125px;
     height: 15px;
     background-color: #b29402;
-    position: absolute;
-    left: -2px;
+    transform: translate(-2px, 0px);
   }
 
   .bean .topbottom {
+    position: absolute;
     width: 125px;
     height: 30px;
     background-color: #b29402;
     border-radius: 50% / 50%;
-    position: absolute;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
-    left: -2px;
+    transform: translate(-2px, 0px);
   }
 
   .bean .bottomred {
+    position: absolute;
     width: 120px;
     height: 30px;
     background-color: #a90d1f;
     border-radius: 50% / 50%;
-    position: absolute;
-    top: 155px;
+    transform: translate(0px, 155px);
   }
 
   .bean .bottom {
+    position: absolute;
     width: 120px;
     height: 30px;
     background-color: #c8ab91;
     border-radius: 50% / 50%;
-    position: absolute;
-    top: 160px;
+    transform: translate(0px, 160px);
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75)
   }
 
   .bean .middle {
+    position: absolute;
     width: 120px;
     height: 170px;
     background-color: #e1c000;
-    position: absolute;
   }
 
   .bean .middlecylinder {
+    position: absolute;
     width: 120px;
     height: 60px;
     background-color: #a90d1f;
-    position: absolute;
-    top: 110px;
+    transform: translate(0px, 110px);
   }
 
   .bean .middlecircle {
@@ -115,7 +125,7 @@
     background-color: #e1c000;
     border-radius: 50% / 50%;
     position: absolute;
-    top: 95px;
+    transform: translate(0px, 95px);
   }
 
   .bean .header-text {
@@ -130,30 +140,26 @@
     position: absolute;
     font-weight: bold;
     font-size: 25px;
-    top: 25px;
-    left: 53px;
+    transform: translate(53px, 25px);
   }
 
   .bean .BUS {
     position: absolute;
     font-weight: bold;
     font-size: 25px;
-    top: 50px;
-    left: 53px;
+    transform: translate(53px, 50px);
   }
 
   .bean .Cafe-express {
     position: absolute;
     font-size: 8px;
-    top: 100px;
-    left: 62px;
+    transform: translate(62px, 100px);
   }
 
   .bean .O {
     position: absolute;
     font-size: 25px;
-    top: 45px;
-    left: -5px;
+    transform: translate(-5px, 45px);
   }
 
   .bean .sub-text {
@@ -167,91 +173,69 @@
   .bean .SIEMPRE {
     position: absolute;
     font-size: 8px;
-    top: 130px;
-    left: 39px;
+    transform: translate(39px, 130px);
   }
 
   .bean .COMO {
     position: absolute;
     font-size: 8px;
-    top: 140px;
-    left: 65px;
+    transform: translate(65px, 140px);
   }
 
   .bean .ENVASADO {
     position: absolute;
     color: #fe9869;
     font-size: 6px;
-    top: 155px;
-    left: 63px;
+    transform: translate(63px, 155px);
   }
 
   .bean .PESO {
     position: absolute;
     font-size: 8px;
-    top: 165px;
-    left: 50px;
+    transform: translate(50px, 165px);
   }
 
   .bean .ALWAYS {
     position: absolute;
     font-size: 8px;
-    top: 130px;
-    left: 53px;
-  }
-  
-  /* Coffee Bean Container Ends*/
-  
-  /* --------------------------------------------------------------------------------------- */
-  
-  /* Coffee Maker Starts */
-  
-  .shadow-bottom-left {
-    filter: drop-shadow(-1px 6px 3px rgba(50, 50, 0, 0.5));
+    transform: translate(53px, 130px);
   }
 
-  .shadow-bottom-right {
-    filter: drop-shadow(3px 6px 3px rgba(50, 50, 0, 0.5));
-  }
-  
-  .shadow-top-left {
-    filter: drop-shadow(-6px -3px 3px rgba(50, 50, 0, 0.5));
-  }
-  
+  /* Coffee Bean Container Ends*/
+
+  /* --------------------------------------------------------------------------------------- */
+
+  /* Coffee Maker Starts */
+
   .coffeemaker {
     position: relative;
-    top: 30px;
+    transform: translate(0px, 30px);
   }
 
   .coffeemaker .gray-bottom {
     position: absolute;
-    left: 0px;
     width: 500px;
     height: 470px;
     clip-path: polygon(37.5% 60%, 62.5% 60%, 66% 85%, 34% 85%);
-    background: linear-gradient(90deg,rgba(133, 133, 133, 1) 0%, rgba(116, 116, 130, 1) 9%, rgba(158, 158, 176, 1) 17%, rgba(199, 201, 209, 1) 54%, rgba(167, 178, 184, 1) 75%, rgba(161, 169, 173, 1) 77%, rgba(105, 109, 110, 1) 88%, rgba(133, 141, 143, 1) 100%);
+    background: linear-gradient(90deg, rgba(133, 133, 133, 1) 0%, rgba(116, 116, 130, 1) 9%, rgba(158, 158, 176, 1) 17%, rgba(199, 201, 209, 1) 54%, rgba(167, 178, 184, 1) 75%, rgba(161, 169, 173, 1) 77%, rgba(105, 109, 110, 1) 88%, rgba(133, 141, 143, 1) 100%);
   }
-  
+
   .coffeemaker .gray-circle-top {
     position: absolute;
     width: 125px;
     height: 30px;
     background: gray;
     border-radius: 50% / 50%;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 285px;
+    transform: translate(187px, 285px);
   }
-  
+
   .coffeemaker .gray-circle-bottom {
     position: absolute;
     width: 160px;
     height: 20px;
     background: #C7C9D1;
     border-radius: 50% / 50%;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 390px;
+    transform: translate(170px, 390px);
   }
 
   .coffeemaker .red-bottom {
@@ -259,19 +243,16 @@
     width: 143px;
     height: 35px;
     background: red;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 260px;
+    transform: translate(178px, 260px);
   }
+
   .coffeemaker .red-bottom-circle {
     position: absolute;
     width: 143px;
     height: 20px;
     background: red;
     border-radius: 50% / 50%;
-    transform: translateX(-50%);
-    left: 50%;
-    top: 285px;
+    transform: translate(178px, 285px);
   }
 
   .coffeemaker .red-middle-1 {
@@ -279,10 +260,8 @@
     width: 500px;
     height: 500px;
     background: red;
-    left: 50%;
-    transform: translateX(-40%);
     clip-path: polygon(20% 28%, 25% 29%, 30% 62%, 24% 60%);
-    top: -40px;
+    transform: translate(50px, -40px);
   }
 
   .coffeemaker .red-middle-2 {
@@ -290,11 +269,8 @@
     width: 500px;
     height: 500px;
     background: #cc0000;
-    left: 50%;
-    transform: translateX(-40%);
     clip-path: polygon(32% 29%, 25% 29%, 30% 62%, 36% 62%);
-    top: -40px;
-
+    transform: translate(50px, -40px);
   }
 
   .coffeemaker .red-middle-3 {
@@ -302,10 +278,8 @@
     width: 500px;
     height: 500px;
     background: #cc0000;
-    left: 50%;
-    transform: translateX(-40%);
     clip-path: polygon(32% 29%, 42% 29%, 44% 62%, 36% 62%);
-    top: -40px;
+    transform: translate(50px, -40px);
   }
 
   .coffeemaker .red-middle-4 {
@@ -313,45 +287,37 @@
     width: 500px;
     height: 500px;
     background: red;
-    left: 50%;
-    transform: translateX(-40%);
     clip-path: polygon(54% 27%, 42% 29%, 44% 62%, 55% 60%);
-    top: -40px;
+    transform: translate(50px, -40px);
   }
-  
+
   .coffeemaker .red-top {
     position: absolute;
     width: 168px;
     height: 40px;
-    background: radial-gradient(circle,rgba(255, 224, 224, 1) 0%, rgba(242, 41, 41, 1) 46%, rgba(240, 103, 103, 1) 100%);
+    background: radial-gradient(circle, rgba(255, 224, 224, 1) 0%, rgba(242, 41, 41, 1) 46%, rgba(240, 103, 103, 1) 100%);
     border-radius: 50% / 50%;
-    transform: translateX(-50%);
-    left: 235px;
-    top: 77px;
+    transform: translate(150px, 77px);
   }
-  
+
   .coffeemaker .red-triangle {
     position: absolute;
     width: 500px;
     height: 500px;
-    transform: translateX(-50%);
     background: #cc0000;
     clip-path: polygon(50% 0%, 54% 10%, 60% 2%);
-    left: 300px;
-    top: 99px;
+    transform: translate(50px, 99px);
   }
-  
+
   .coffeemaker .black-triangle {
     position: absolute;
     width: 500px;
     height: 500px;
-    transform: translateX(-50%);
     background: black;
     clip-path: polygon(50% 18%, 60% 20%, 55% 18%);
-    left: 300px;
-    top: 10px;
+    transform: translate(50px, 10px);
   }
-  
+
   .coffeemaker .red-circle-1 {
     position: absolute;
     width: 27px;
@@ -362,7 +328,7 @@
     left: 162px;
     top: 98px;
   }
-  
+
   .coffeemaker .red-circle-2 {
     position: absolute;
     width: 40px;
@@ -373,7 +339,7 @@
     left: 190px;
     top: 101px;
   }
-  
+
   .coffeemaker .red-circle-3 {
     position: absolute;
     width: 50px;
@@ -384,7 +350,7 @@
     left: 235px;
     top: 101px;
   }
-  
+
   .coffeemaker .red-circle-4 {
     position: absolute;
     width: 75px;
@@ -395,70 +361,272 @@
     left: 282px;
     top: 97px;
   }
-  
+
   .coffeemaker .red-square {
     position: absolute;
     width: 100px;
     height: 50px;
     clip-path: polygon(20% -5%, 40% 20%, 40% 40%, 8% 24%);
     background: red;
-    left: 290px;
-    top: 90px;
+    transform: translate(290px, 90px);
   }
-  
+
   .coffeemaker .black-circle {
     position: absolute;
     width: 25px;
     height: 10px;
     background: black;
     border-radius: 50% / 50%;
-    left: 219.9px;
-    top: 80px;
+    transform: translate(219.9px, 80px);
   }
-  
+
   .coffeemaker .black-cylinder {
     position: absolute;
     width: 90px;
     height: 90px;
     background: black;
     clip-path: polygon(25% 15%, 65% 15%, 60% 50%, 34% 52%);
-    left: 190px;
-    top: 40px;
+    transform: translate(190px, 40px);
   }
+
   .coffeemaker .black-circle-top {
     position: absolute;
     width: 35px;
     height: 10px;
     background: #919191;
     border-radius: 50% / 50%;
-    left: 213px;
-    top: 48px;
+    transform: translate(213px, 48px);
   }
-  
+
   .coffeemaker .black-handle {
     position: absolute;
     width: 500px;
     height: 500px;
     background: black;
     clip-path: polygon(28% 26%, 28% 31%, 25% 35%, 25% 41%, 26% 45%, 25% 50%, 27% 53%, 25% 59%, 22% 59%, 20% 38%, 23% 30%);
-    left: 2px;
-    top: -43px;
+    transform: translate(2px, -43px);
   }
-  
+
   .coffeemaker .red-top-box {
     position: absolute;
     width: 30px;
     height: 30px;
     background: red;
-    left: 140px;
-    top: 85px;
+    transform: translate(140px, 85px);
   }
-  
+
   /* Coffee Maker Ends */
-  
-  
-  
-  
+
+  /* --------------------------------------------------------------------------------------- */
+
+  /* Cups Starts */
+
+  .cup1 {
+    transform: translate(80px, 200px) scale(0.9);
+  }
+
+  .cup2 {
+    transform: translate(80px, 130px) scale(0.9);
+  }
+
+  .cup3 {
+    transform: translate(85px, 10px) scale(0.6);
+  }
+
+  .cup {
+    position: relative;
+  }
+
+  .cup .cup-bottom-bottom {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background: #eadcda;
+    border-radius: 50% / 50%;
+    transform: translate(200px, 200px);
+  }
+
+  .cup .cup-bottom-middle {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background: #eadcda;
+    transform: translate(200px, 200px);
+  }
+
+  .cup .cup-middle-bottom {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #eadcda;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 190px);
+  }
+
+  .cup .cup-middle-middle {
+    position: absolute;
+    width: 110px;
+    height: 85px;
+    background: #eadcda;
+    transform: translate(195px, 115px);
+  }
+
+  .cup .cup-middle-top {
+    position: absolute;
+    width: 110px;
+    height: 40px;
+    background: #eadcda;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 95px);
+  }
+
+  .cup .cup-top-circle {
+    position: absolute;
+    width: 95px;
+    height: 30px;
+    background: linear-gradient(0deg, rgba(125, 125, 115, 1) 0%, rgba(217, 218, 198, 1) 100%);
+    border-radius: 50% / 50%;
+    transform: translate(202px, 100px);
+  }
+
+  .cup .flag-red-triangle {
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background: #7a0d0c;
+    clip-path: polygon(29% 27%, 29% 39%, 39% 33%);
+    transform: translate(100px, 5px);
+  }
+
+  .cup .flag-star {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background: #eadcda;
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    transform: translate(253px, 157px);
+  }
+
+  .cup .flag-blue-1 {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #173378;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 180px);
+  }
+
+  .cup .flag-blue-middle-1 {
+    position: absolute;
+    width: 110px;
+    height: 12px;
+    background: #173378;
+    transform: translate(195px, 178px);
+  }
+
+  .cup .flag-white-1 {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #eadcda;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 168px);
+  }
+
+  .cup .flag-blue-2 {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #173378;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 156px);
+  }
+
+  .cup .flag-blue-middle-2 {
+    position: absolute;
+    width: 110px;
+    height: 12px;
+    background: #173378;
+    transform: translate(195px, 154px);
+  }
+
+  .cup .flag-white-2 {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #eadcda;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 144px);
+  }
+
+  .cup .flag-blue-3 {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #173378;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 132px);
+  }
+
+  .cup .flag-blue-middle-3 {
+    position: absolute;
+    width: 110px;
+    height: 12px;
+    background: #173378;
+    transform: translate(195px, 130px);
+  }
+
+  .cup .flag-white-3 {
+    position: absolute;
+    width: 110px;
+    height: 20px;
+    background: #eadcda;
+    border-radius: 50% / 50%;
+    transform: translate(195px, 120px);
+  }
+
+  .cup .flag-white-cover {
+    position: absolute;
+    width: 50px;
+    height: 70px;
+    background: #eadcda;
+    transform: translate(195px, 130px);
+  }
+
+  .cup .flag-white-cover-3 {
+    position: absolute;
+    width: 30px;
+    height: 70px;
+    background: #eadcda;
+    transform: translate(275px, 130px);
+  }
+
+  .cup .flag-blue-line {
+    position: absolute;
+    width: 2px;
+    height: 60px;
+    background: #173378;
+    transform: translate(275px, 139px);
+  }
+
+  .cup .flag-red-line {
+    position: absolute;
+    width: 8px;
+    height: 60px;
+    background: #7a0d0c;
+    transform: translate(297px, 135px);
+  }
+
+  .cup .handle {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background: #eadcda;
+    clip-path: polygon(61% 23%, 60% 27%, 63% 27%, 65% 24%, 68% 24%, 71% 26%, 73% 31%, 73% 36%, 73% 42%, 70% 45%, 65% 45%, 64% 42%, 62% 43%, 61% 46%, 63% 49%, 67% 49%, 73% 48%, 76% 44%, 77% 38%, 77% 33%, 76% 28%, 74% 24%, 71% 21%, 65% 21%);
+    transform: translate(165px, 95px);
+  }
+
+  /* Cups End */
 </style>
 
 
@@ -484,10 +652,8 @@
         <p class="COMO">COMO NIN</p>
         <p class="ENVASADO">ENVASADO AL</p>
         <p class="PESO">PESO NETO 1</p>
-
       </div>
     </div>
-
   </div>
 
   <div class="bean2">
@@ -508,16 +674,95 @@
       </div>
       <div class="sub-text">
         <p class="ALWAYS">ALWAYS</p>
-
       </div>
     </div>
-
   </div>
-  
-  
-  
+
+  <div class="cup1">
+    <div class="cup">
+      <div class="cup-bottom-bottom"></div>
+      <div class="cup-bottom-middle"></div>
+      <div class="shadow-bottom-right">
+        <div class="cup-middle-bottom"></div>
+      </div>
+      <div class="cup-middle-middle"></div>
+
+      <div class="flag-blue-1"></div>
+      <div class="flag-blue-middle-1"></div>
+      <div class="flag-white-1"></div>
+      <div class="flag-blue-2"></div>
+      <div class="flag-blue-middle-2"></div>
+      <div class="flag-white-2"></div>
+      <div class="flag-blue-3"></div>
+      <div class="flag-blue-middle-3"></div>
+      <div class="flag-white-3"></div>
+      <div class="flag-red-triangle"></div>
+      <div class="flag-star"></div>
+      <div class="flag-white-cover"></div>
+    </div>
+  </div>
+  <div class="cup2">
+    <div class="cup">
+      <div class="shadow-bottom-right">
+        <div class="cup-middle-bottom"></div>
+      </div>
+      <div class="cup-middle-middle"></div>
+
+      <div class="flag-blue-1"></div>
+      <div class="flag-blue-middle-1"></div>
+      <div class="flag-white-1"></div>
+      <div class="flag-blue-2"></div>
+      <div class="flag-blue-middle-2"></div>
+      <div class="flag-white-2"></div>
+      <div class="flag-blue-3"></div>
+      <div class="flag-blue-middle-3"></div>
+      <div class="flag-white-3"></div>
+      <div class="flag-red-triangle"></div>
+      <div class="flag-star"></div>
+      <div class="flag-white-cover"></div>
+      <div class="shadow-bottom-right">
+        <div class="cup-middle-top"></div>
+      </div>
+      <div class="cup-top-circle"></div>
+    </div>
+  </div>
+  <div class="cup3">
+    <div class="cup">
+      <div class="cup-bottom-bottom"></div>
+      <div class="cup-bottom-middle"></div>
+      <div class="shadow-bottom-right">
+        <div class="cup-middle-bottom"></div>
+      </div>
+      <div class="cup-middle-middle"></div>
+
+      <div class="flag-blue-1"></div>
+      <div class="flag-blue-middle-1"></div>
+      <div class="flag-white-1"></div>
+      <div class="flag-blue-2"></div>
+      <div class="flag-blue-middle-2"></div>
+      <div class="flag-white-2"></div>
+      <div class="flag-blue-3"></div>
+      <div class="flag-blue-middle-3"></div>
+      <div class="flag-white-3"></div>
+      <div class="flag-white-cover-3"></div>
+      <div class="flag-red-line"></div>
+      <div class="flag-blue-line"></div>
+      <div class="shadow-bottom-right">
+        <div class="cup-middle-top"></div>
+      </div>
+      <div class="cup-top-circle"></div>
+      <div class="shadow-bottom-right">
+        <div class="handle"></div>
+      </div>
+    </div>
+  </div>
+
+
+
   <div class="coffeemaker">
-    <div class="gray-circle-bottom"></div>
+    <div class="shadow-bottom-right">
+      <div class="gray-circle-bottom"></div>
+    </div>
     <div class="gray-bottom"></div>
     <div class="gray-circle-top"></div>
     <div class="shadow-bottom-left">
@@ -553,7 +798,7 @@
     <div class="black-circle"></div>
     <div class="black-cylinder"></div>
     <div class="black-circle-top"></div>
-    
+
   </div>
-  
+
 </div>
